@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Edit Student Per Course</title>
+
+    <style>
+              body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/hats.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: orange;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    
+        <div class="container">
+            <h2>Update Student Per Course</h2>
+            <form>
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Student First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" required name="firstname" placeholder="Student name" maxlength="20" size="21">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Student Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" required name="lastname" placeholder="Student last name" maxlength="20" size="21">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="CT">Course Title</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="CT" name="CT" required placeholder="Course Title" maxlength="20" size="21">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="CD">Course Description</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="CD" name="CD" required placeholder="Course Description" maxlength="20" size="21">
+                </div>
+              </div>
+            <div class="row">
+              <input type="submit" onclick="return confirmation()" value="Update StudentPerCourse">
+            </div>
+            </form>
+            <script src="resources/app.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </div>
+    </body>
+
+
+</html>

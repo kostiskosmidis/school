@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>School</title>
+    <style>
+        header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/skyscraper-3184798_1280.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+section {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    margin-top: 3em;
+    margin-top: 3em;
+}
+
+#students{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/hats.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+#students table{
+    color: white;
+}
+#courses table{
+    color: white;
+}
+#courses{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/courses.jpg
+    );
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+#trainers{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/teacher.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+#trainers table{
+    color: white;
+}
+#assignments{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/assignment.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+#assignments table{
+    color: white;
+}
+h1, h2, h3, legend, #welcome p {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h1 span {
+    color: #e67e22;
+}
+
+.btn, input[type=submit] {
+    padding: 5px 12px;
+    margin-right: 5px;
+    border-radius: 50px;
+    background-color: #e99041;
+    border: 2px solid #e99041;
+    color: #fff;
+}
+
+.button1{
+color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: orange;
+padding: 20px;
+border-radius: 50px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+}
+    </style>
+  </head>
+  <body>
+
+    <header id="home">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#home"></a><!--<img src=""
+                    alt="" class="logo"></a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Entities</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#students">Students</a>
+                            <a class="dropdown-item" href="#courses">Courses</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#trainers">Trainers</a>
+                            <a class="dropdown-item" href="#assignments">Assignments</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#relateEntities">Relate entities</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" id="welcome">
+            <h1>Welcome to our School<br><span>The career academy!</span></h1>
+            <a href="#students" class="btn" role="button">Students</a>
+            <a href="#trainers" class="btn" role="button">Trainers</a>
+            <a href="#courses" class="btn" role="button">Courses</a>
+            <a href="#assignments" class="btn" role="button">Assignments</a>
+        </div>
+    </header>
+
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2>About our School</h2>
+              <p class="lead">A great place to start your career. 90% of our students find a job after graduation!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section id="students" class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Students</h2>
+                <table id="stTable" contenteditable="true" class="table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Date Of Birth</th>
+                            <th>Tuition Fees</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kostis</td>
+                            <td>Kosmidis</td>
+                            <td>29/07/1986</td>
+                            <td>1300</td>
+                            <td><button onclick="location.href = 'updateStudent.html';" class="btn">Edit</button></td>
+                            <td><button class="btn" onclick="delRow(this)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Romana</td>
+                            <td>Chandler</td>
+                            <td>30/08/1990</td>
+                            <td>1200</td>
+                            <td><button onclick="location.href = 'updateStudent.html';" class="btn">Edit</button></td>
+                            <td><button class="btn" onclick="delRow(this)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Ashlyn</td>
+                            <td>Haigh</td>
+                            <td>27/06/1986</td>
+                            <td>1700</td>
+                            <td><button class="btn" onclick="location.href = 'updateStudent.html';">Edit</button></td>
+                            <td><button class="btn" onclick="delRow(this)">Delete</button></td>
+                        </tr>
+                        <!--<tr>
+                            <td><input id="firstname"type="text" placeholder="First Name"></td>
+                            <td><input id="lastname" type="text" placeholder="Last Name"></td>
+                            <td><input id="dob" type="date" placeholder="Date Of Birth"></td>
+                            <td><input id="tuition" type="text" placeholder="Tuition Fees"></td>
+                            <td colspan="3"><button class="button1">Add Student</button></td>
+                        </tr>-->
+                    </tbody>
+                </table> 
+                <form id="st" >
+                    <input id="firstname" type="text" required maxlength="20" size="21" placeholder="Enter First Name">
+                    <input id="lastname" type="text" required maxlength="20" size="21" placeholder="Enter Last Name">
+                    <input id="dob" type="date" required>
+                    <input id="tuition" type="number" min="0" required placeholder="Enter Tuition Fees">
+                    <button class="button1">Add Student</button>
+                </form>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section id="courses" class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Courses</h2>
+                <table contenteditable="true" id="courseTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Stream</th>
+                            <th>Type</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Java Course</td>
+                            <td>Java</td>
+                            <td>Part Time</td>
+                            <td>10-06-2020</td>
+                            <td>10-08-2020</td>
+                            <td><button onclick="location.href = 'updateCourse.html';" class="btn">Edit</button></td>
+                            <td><button class="btn" onclick="delRowCourse(this)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>C# Course</td>
+                            <td>C#</td>
+                            <td>Full Time</td>
+                            <td>10-06-2020</td>
+                            <td>10-08-2020</td>
+                            <td><button onclick="location.href = 'updateCourse.html';" class="btn">Edit</button></td>
+                            <td><button class="btn" onclick="delRowCourse(this)">Delete</button></td>
+                        </tr>
+                        <!-- <tr>
+                            <td><input type="text" placeholder="Title"></td>
+                            <td><input type="text" placeholder="Stream"></td>
+                            <td><input type="text" placeholder="Type"></td>
+                            <td><input type="text" placeholder="Start Date"></td>
+                            <td><input type="text" placeholder="End Date"></td>
+                            <td colspan="3"><button>Add Course</button></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <form id="fcourses">
+                    <input id="title" type="text" required placeholder="Enter Title">
+                    <input id="stream" type="text" required placeholder="Enter Stream">
+                    <input id="type" type="text" required placeholder="Enter Type">
+                    <input id="start" required type="date" >
+                    <input id="end" type="date" >
+                    <button class="button1">Add Course</button>
+                </form>
+        
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="trainers" class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Trainers</h2>
+                <table contenteditable="true" class="table" id="trainerTable">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Subject</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nick</td>
+                            <td>Papadopoulos</td>
+                            <td>Java</td>
+                            <td><button class="btn" onclick="location.href = 'updateTrainer.html';">Edit</button></td>
+                            <td><button class="btn" onclick="delRowTrainer(this)">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Stavros</td>
+                            <td>Dimitriou</td>
+                            <td>C#</td>
+        
+                            <td><button class="btn" onclick="location.href = 'updateTrainer.html';">Edit</button></td>
+                            <td><button class="btn" onclick="delRowTrainer(this)">Delete</button></td>
+                        </tr>
+                       
+                        <!-- <tr>
+                            <td><input type="text" placeholder="First Name"></td>
+                            <td><input type="text" placeholder="Last Name"></td>
+                            <td><input type="text" placeholder="Subject"></td>
+                            <td colspan="3"><button>Add Trainer</button></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <form id="ftrainers">
+                    <input id="trfirstname" type="text" maxlength="20" size="21" required placeholder="Enter First Name">
+                    <input id="trlastname" type="text" maxlength="20" size="21" required placeholder="Enter Last Name">
+                    <input id="subject" type="text" maxlength="20" size="21" required placeholder="Enter Subject">
+                    <button class="button1">Add Trainer</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="assignments" class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2>Assignments</h2>
+              <table contenteditable="true" id="assignmentTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Submission Date</th>
+                        <th>Total Mark</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Algorithms</td>
+                        <td>Programming</td>
+                        <td>20/02/2020</td>
+                        <td>8</td>
+                        <td><button class="btn" onclick="location.href = 'updateAssignment.html';">Edit</button></td>
+                        <td><button class="btn" onclick="delRowAssignment(this)">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>Solve Exercises</td>
+                        <td>20/10/2020</td>
+                        <td>7</td>
+                        <td><button class="btn" onclick="location.href = 'updateAssignment.html';">Edit</button></td>
+                        <td><button onclick="delRowAssignment(this)" class="btn">Delete</button></td>
+                    </tr>
+                    <!-- <tr>
+                        <td><input type="text" placeholder="Title"></td>
+                        <td><input type="text" placeholder="Description"></td>
+                        <td><input type="text" placeholder="Submission Date"></td>
+                        <td><input type="text" placeholder="Total Mark"></td>
+                        <td colspan="3"><button>Add Assignment</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <form id="fassignments">
+                <input id="atitle" type="text" maxlength="20" size="21" required placeholder="Enter Title">
+                <input id="adescription" type="text" maxlength="20" size="21" required placeholder="Enter Description">
+                <input id="sub" required type="date" >
+                <input id="mark" required type="number" min="0" max="10" placeholder="Enter Mark">
+                <button class="button1">Add Assignment</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="relateEntities" class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Students per Course</h2>
+                <table contenteditable="true" id="studentPerCourse" class="table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Course Title</th>
+                            <th>Course Description</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kostis</td>
+                            <td>Kosmidis</td>
+                            <td>Java</td>
+                            <td>Programming</td>
+                            <td><button  onclick="location.href = 'editStuPerCourse.html';" class="btn">Edit</button></td>
+                            <td><button onclick="delRowStuPerCourse(this)" class="btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Romana</td>
+                            <td>Chandler</td>
+                            <td>C#</td>
+                            <td>Programming</td>
+                            <td><button onclick="location.href = 'editStuPerCourse.html';" class="btn">Edit</button></td>
+                            <td><button onclick="delRowStuPerCourse(this)" class="btn">Delete</button></td>
+                        </tr>
+                        <!-- <tr>
+                            <td><input type="text" placeholder="First Name"></td>
+                            <td><input type="text" placeholder="Last Name"></td>
+                            <td><input type="text" placeholder="Course Title"></td>
+                            <td><input type="text" placeholder="Course Description"></td>
+                            <td colspan="3"><button>Enroll Student To Course</button></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <form id="stupercourse">
+                    <input id="stuname" maxlength="20" size="21" type="text" required placeholder="Enter First Name">
+                    <input id="stulastname" maxlength="20" size="21" type="text" required placeholder="Enter Last Name">
+                    <input id="coursetitle" type="text" maxlength="20" size="21" required placeholder="Enter Course Title">
+                    <input id="coursedescr" type="text" maxlength="20" size="21" required placeholder="Enter Course Description">
+                    <button class="button1">Add Student to Course</button>
+                </form>
+                <br>
+
+                <h2>Assignments per Student</h2>
+                <table contenteditable="true" id="AperS" class="table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Assignment Title</th>
+                            <th>Assignment Description</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kostis</td>
+                            <td>Kosmidis</td>
+                            <td>Individual Project</td>
+                            <td>Programming</td>
+                            <td><button onclick="location.href = 'editAssignPerStudent.html';" class="btn">Edit</button></td>
+                            <td><button onclick="delRowAssignPerStu(this)" class="btn" >Delete</button></td>
+                        </tr>
+                        <!-- <tr>
+                            <td><input type="text" placeholder="First Name"></td>
+                            <td><input type="text" placeholder="Last Name"></td>
+                            <td><input type="text" placeholder="Assignment Title"></td>
+                            <td><input type="text" placeholder="Assignment Description"></td>
+                            <td colspan="3"><button>Assign Assignment to Student</button></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <form id="assignmentperstudent">
+                    <input id="astuname" type="text" maxlength="20" size="21" required placeholder="Enter First Name">
+                    <input id="astulastname" type="text" maxlength="20" size="21" required placeholder="Enter Last Name">
+                    <input id="assigntitle" type="text" maxlength="20" size="21" required placeholder="Assignment Title">
+                    <input id="assigndescr" type="text" maxlength="20" size="21" required placeholder="Assignment Description">
+                    <button class="button1">Add Assignment to Student</button>
+                </form>
+                <br>
+                <h2>Assignment per Course</h2>
+                <table contenteditable="true" id="ApC" class="table">
+                    <thead>
+                        <tr>
+                            <th>Assignment Title</th>
+                            <th>Assignment Description</th>
+                            <th>Course Title</th>
+                            <th>Course Description</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Individual Project 1</td>
+                            <td>Programming</td>
+                            <td>Java</td>
+                            <td>Full Time</td>
+                            <td><button onclick="location.href = 'editAssignPerCourse.html';" class="btn">Edit</button></td>
+                            <td><button onclick="delRowAssignPerCourse(this)" class="btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Individual Project 2</td>
+                            <td>Programming</td>
+                            <td>C#</td>
+                            <td>Full Time</td>
+                            <td><button onclick="location.href = 'editAssignPerCourse.html';" class="btn">Edit</button></td>
+                            <td><button onclick="delRowAssignPerCourse(this)" class="btn">Delete</button></td>
+                        </tr>
+                        <!-- <tr>
+                            <td><input type="text" placeholder="Assignment Title"></td>
+                            <td><input type="text" placeholder="Assignment Description"></td>
+                            <td><input type="text" placeholder="Course Title"></td>
+                            <td><input type="text" placeholder="Course Description"></td>
+                            <td colspan="3"><button>Register Assignment To Course</button></td>
+                        </tr> -->
+        
+                    </tbody>
+                </table>
+                <form id="assignmentpercourse">
+                    <input id="assignmentTitle" type="text" maxlength="20" size="21" required placeholder="Assignment Title">
+                    <input id="assignmentDescr" type="text" maxlength="20" size="21" required placeholder="Assignment Description">
+                    <input id="acourseTitle" type="text" maxlength="20" size="21" required placeholder="Course Title">
+                    <input id="acourseDescr" type="text" maxlength="20" size="21" required placeholder="Course Description">
+                    <button class="button1">Add Assignment to Course</button>
+                </form>
+                <br>
+                <h2>Trainers per Course</h2>
+                <table contenteditable="true" id="TpC" class="table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Course Title</th>
+                            <th>Course Description</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nick</td>
+                            <td>Papadopoulos</td>
+                            <td>Java</td>
+                            <td>Programming</td>
+                            <td><button onclick="location.href = 'editTrainerPerCourse.html';" class="btn">Edit</button></td>
+                            <td><button onclick="delRowTrainerPerCourse(this)" class="btn">Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Stavros</td>
+                            <td>Dimitriou</td>
+                            <td>C#</td>
+                            <td>Programming</td>
+                            <td><button onclick="location.href = 'editTrainerPerCourse.html';" class="btn">Edit</button></td>
+                            <td><button onclick="delRowTrainerPerCourse(this)" class="btn">Delete</button></td>
+                        </tr>
+                        <!-- <tr>
+                            <td><input type="text" placeholder="Trainer's First Name"></td>
+                            <td><input type="text" placeholder="Trainer's Last Name"></td>
+                            <td><input type="text" placeholder="Course Title"></td>
+                            <td><input type="text" placeholder="Course Description"></td>
+                            <td colspan="3"><button>Enroll Trainer To Course</button></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <form id="trainerpercourse">
+                    <input id="trainerName" type="text" maxlength="20" size="21" required placeholder="Trainer's Name">
+                    <input id="trainerLastName" type="text" maxlength="20" size="21" required placeholder="Trainer's Last Name">
+                    <input id="trcourseTitle" type="text" maxlength="20" size="21" required placeholder="Course Title">
+                    <input id="trcourseDescr" type="text" maxlength="20" size="21" required placeholder="Course Description">
+                    <button class="button1">Add Trainer to Course</button>
+                </form>
+                <br>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Footer -->
+      <footer class="py-5 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white">Copyright &copy; School Website 2020</p>
+        </div>
+        <!-- /.container -->
+      </footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="resources/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
